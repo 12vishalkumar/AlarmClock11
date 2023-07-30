@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Alarm Clock</title>
+
+	    <!-- ***** Font Awesome Icons ***** -->
+	      <link rel="stylesheet" type="text/css" 
+	        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+	    <!-- ***** Google Fonts ***** -->
+	    <link rel="stylesheet" type="text/css" 
+	        href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap">
+
+	    <!-- ***** StyleSheet ***** -->
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/10473/10473481.png" type="image/x-icon">
+    </head>
+
+    <body>
+
+    	<!-- ***** Heading ***** -->
+		<div class= "pageTitle">
+			<h1>ALARM CLOCK ⏰</h1>
+		</div>
+
+	    <div class="wrapper">
+			<div class="time-display">00:00:00</div>
+				<div class="container">
+				<div class="inputs">
+					<input type="number" id="hourInput" placeholder="00" min="0" max="23" required />
+					<input type="number" id="minuteInput" placeholder="00" min="0" max="59" required />
+					<input type="number" id="secondInput" placeholder="00" min="0" max="59" />
+
+				</div>
+				<button type="button" class="btn" id="set-btn">Set Alarm</button>
+				<div class="activeAlarms"></div>
+			</div>
+	    </div> 
+
+        <!-- ***** script ***** -->
+        <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

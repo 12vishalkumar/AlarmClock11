@@ -1,0 +1,200 @@
+body{
+    animation: bg-color 5s ease-in-out infinite;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+
+/* ***** Background Color Animation ***** */
+@keyframes color-change {
+	0% { 
+	    background-color: #90EE90; 
+	}
+	25% {
+		background-color: #66CDAA;
+	}
+	50% { 
+	    background-color: #00FA9A; 
+	}
+	100% { 
+	    background-color: #3CB371; 
+	}
+}
+
+@keyframes bg-color {
+	0% { 
+	    background-color: #6495ED; 
+	}
+	25% {
+		background-color: #00BFFF;
+	}
+	50% { 
+	    background-color: #1E90FF; 
+	}
+	100% { 
+	    background-color: #0000FF; 
+	}
+}
+
+.alarm {
+  	animation: color-change 3s infinite;
+  	border-radius: 0.4em;
+}
+
+/* ***** Page Title ***** */
+.pageTitle {
+    background-color: #0E141B;
+    align-items: center;
+    text-align: center;
+    color: wheat; 
+}
+
+
+/* ***** Wrapper Class ***** */
+.wrapper {
+/*	background-color: #D3D3D3;*/
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ZV0w-KzvYK4g5dCeGGNTR9MaWzypzzR4fosSRPb9BDlRVZsOJSspv6_2OWcwraRDglA&usqp=CAU");
+	width: 87%;
+	max-width: 30em;
+	padding: 3.12em 5em;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 4em;
+	border-radius: 2.5em;
+	text-align: center;
+}
+
+
+/* ***** Time Display Class ***** */
+.time-display {
+	font-size: 2.2em;
+	text-align: center;
+	font-family: "Roboto Mono", monospace;
+}
+
+
+
+/* ***** Container Class ***** */
+/* .container {
+
+} */
+
+
+/* ***** Input Class ***** */
+.inputs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.1em;
+	margin-top: 2em;
+}
+.inputs input {
+	width: 2.8em;
+	font-size: 1.3em;
+	border: 1px solid #000000;
+	border-radius: 0.3em;
+	padding: 0.4em 0.2em;
+}
+
+
+/* ***** Set Id ***** */
+#set-btn {
+	background-color: #377dff;
+	border: none;
+	padding: 0.8em 1.2em;
+	display: block;
+	margin: 1.5em auto 0 auto;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: green;
+}
+
+
+/* *****  Alarms  ***** */
+.alarm {
+	display: grid;
+	grid-template-columns: 10fr 2fr 2fr;
+	gap: 1.1em;
+	margin-top: 1.5em;
+	align-items: center;
+	border-bottom: 1px solid #898f9b;
+	padding-bottom: 0.6em;
+}
+
+#alarm{
+	margin-top: 0.7em;
+	margin-right: 1.5em;
+	font-size: 1.4em;
+	font-weight: 4em;
+}
+
+/* ***** Input Alarm ***** */
+.alarm input[type="checkbox"] {
+	appearance: none;
+	height: 2em;
+	width: 3.75em;
+	background-color: #e2e2ec;
+	border-radius: 1.25em;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	margin-top: 1em;
+	margin-left: 0.5em;
+}
+
+.alarm input[type="checkbox"]:before {
+	position: absolute;
+	content: "";
+	background-color: #757683;
+	height: 1.43em;
+	width: 1.43em;
+	border-radius: 50%;
+	top: 0.30em;
+	left: 0.25em;
+}
+
+.alarm input[type="checkbox"]:checked {
+    background-color: #d2e2ff;
+}
+
+.alarm input[type="checkbox"]:checked:before {
+	background-color: #377dff;
+	left: 2em;
+}
+
+/* ***** Hovering ***** */
+.alarm:hover {
+    background-color: #32CD32;
+	transition: background-color 0.2s ease-in-out;
+}
+
+
+
+/* ***** Deletion Button ***** */
+.deleteButton {
+	background-color: transparent;
+	font-size: 1.5em;
+	color: black;
+	border: none;
+	cursor: pointer;
+	margin-top: 0.6em;
+}
+
+/* ***** Hovering in Deletion ***** */
+.deleteButton:hover {
+	color: #ff5a5f;
+	transition: color 0.2s ease-in-out;
+}
