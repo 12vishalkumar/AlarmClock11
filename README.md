@@ -1,5 +1,4 @@
 # AlarmClock11
-# AlarmClock11
 ### Link: [Go Live](https://12vishalkumar.github.io/AlarmClock11/)
 ## Objective:
 - This project is a web-based application that allows the users to set and manage multiple alarms at any time which the user needs to set. This is a project for Alarm Clock Developed using Vanilla JavaScript, HTML and CSS. 
